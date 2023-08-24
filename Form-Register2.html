@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetsWorld</title>
+    <link rel="stylesheet" href="Styles css/Registro2.css">
+    <link rel="icon" href="./images/logomini.png">
+</head>
+<body>
+    <script src="../Pets world/JS/registro.js"></script>
+    <div class="container">
+        <div class="login">
+            <center>
+            <form id="form">
+                <img src="./images/pets.jpeg" class="logo">
+                <h1>Crear  <span class="jkl">Cuenta</span></h1>
+                <p id="warnings" class="warnings"></p>
+
+                <label for="roles" class="lbl1">Selecciona tu rol:</label>
+                <br>
+                <br>
+                <select id="roles" class="rol">
+                    <option value="user">Usuario</option>
+                    <option value="Paseador">Paseador</option>
+                    <option value="Instructor">Instructor</option>
+                    <option value="Veterinario">Veterinario</option>
+                    <option value="Administrador">Administrador</option>
+      
+                </select>
+
+                <br>
+                
+                <br>
+                <label for="" class="lbl3">Para validar su identidad por favor debe suministrar las siguientes imagenes de acuerdo con la instruccion:</label>
+                <br>
+                <br>
+
+                <label for="imagen1" class="lbl2">Rostro de frente</label>
+                <input type="file" id="imagen1" name="imagen1" accept="image/*">
+
+                <br>
+                <br>
+
+                <label for="imagen2" class="lbl2">Rostro de perfil derecho</label>
+                <input type="file" id="imagen2" name="imagen2" accept="image/*">
+
+                <br>
+                <br>
+
+                <label for="imagen3" class="lbl2">Rostro de perfil izquierdo</label>
+                <input type="file" id="imagen3" name="imagen3" accept="image/*">
+
+                <br>
+
+                <br><br>
+                <button><span>Enviar</span></button>
+                <br><br>
+                
+            </form>
+        </center>
+        </div>
+        
+    </div>
+ 
+</body>
+</html>

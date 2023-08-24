@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetsWorld</title>
-    <link rel="stylesheet" href="./styles login.css">
-    <link rel="icon" href="./images/pets.jpeg">
+    <link rel="stylesheet" href="Styles css/styles login.css">
+    <link rel="icon" href="./images/logomini.png">
 </head>
+
 <body>
+    
     <div class="container">
         <div class="login">
             <center>
-            <form>
-                <img src="./images/pets.jpeg" class="logo">
-                <h1>Iniciar <span class="jkl">Sesión</span></h1>
-                <label class="lbl1">Usuario</label>
-                <input type="email" name="Usuario" id="Usuario" class="info" placeholder="">
-                
-                <label class="lbl2">Contraseña</label>
-                <input type="password" name="contraseña" id="contraseña" class="info" placeholder="">
-                <br><br>
-                <button><span>INGRESAR</span></button>
-                <br><br>
-                <a href="./Recover.html">Olvido su contraseña?</a>
-                <a href="./Form-Register.html">Crear cuenta</a>
-            </form>
-        </center>
+                <form id="form">
+                    <img src="./images/pets.jpeg" class="logo">
+                    <h1>Iniciar <span class="jkl">Sesión</span></h1>
+                    <p class="warnings" id="warnings"></p>
+                    <label class="lbl1">Usuario</label>
+                    <input type="email"  id="usuario"  autofocus><span class="info"></span>
+
+                    <label class="lbl2">Contraseña</label>
+                    <input type="password"  id="contraseña" class="info" placeholder="">
+                    <br><br>
+                    <button type="submit" ><span>INGRESAR</span></button>
+                    <br><br>
+                    <div>
+                        <a href="./Recover.html">Olvido su contraseña?</a>
+                        <a href="./Form-Register.html">Crear cuenta</a>
+                    </div>
+                </form>
+            </center>
         </div>
         <div class="pic">
             <img src="./images/picture.png">
         </div>
     </div>
-    
+    <script src="./JS/app.js"></script>
+
+
+
 </body>
+
 </html>

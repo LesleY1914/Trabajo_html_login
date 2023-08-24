@@ -5,45 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetsWorld</title>
-    <link rel="stylesheet" href="./styles register.css">
-    <link rel="icon" href="./images/pets.jpeg">
+    <link rel="stylesheet" href="Styles css/styles register.css">
+    <link rel="icon" href="./images/logomini.png">
+    <script src="./JS/registro.js"></script> 
 </head>
 <body>
     <div class="container">
-        <div class="login">
+        <div class="registro">
             <center>
-            <form>
+            <form id="form">
                 <img src="./images/pets.jpeg" class="logo">
                 <h1>Crear  <span class="jkl">Cuenta</span></h1>
+                
+                <p id="warnings" class="warnings"></p>
 
                 <label class="lbl1">Nombres</label>
-                <input type="email" name="Usuario" id="Usuario" class="info" placeholder="">
+                <input type="text" name="Nombres" id="Nombres" autofocus><span class="info"></span>
 
                 <label class="lbl1">Apellidos</label>
-                <input type="email" name="Usuario" id="Usuario" class="info" placeholder="">
+                <input type="text" name="Apellidos" id="Apellidos" autofocus><span class="info"></span>
 
+                <label class="lbl1">Fecha de nacimiento</label>
+                <input type="date" name="date" id="fecha" autofocus><span class="info"></span>
+                
                 <label class="lbl1">Correo electrónico</label>
-                <input type="email" name="Usuario" id="Usuario" class="info" placeholder="">
+                 <input type="text" name="Mail" id="Mail"  autofocus ><span class="info"></span>
 
                 <label class="lbl1">Número de teléfono</label>
-                <input type="email" name="Usuario" id="Usuario" class="info" placeholder="">
+                <input type="text" name="number" id="number" class="info" autofocus >
+                <p id="warnings2"></p>
 
                 <label class="lbl1">Contraseña</label>
-                <input type="email" name="Usuario" id="Usuario" class="info" placeholder="">
+                <input type="password" name="pasword" id="password"  autofocus ><span class="info"></span>
 
                 <label class="lbl2">Confirmar contraseña</label>
-                <input type="email" name="Usuario" id="Usuario" class="info" placeholder="">
+                <input type="password" name="pasword_2" id="password_2" ><span class="info"></span>
+
+
 
                 
                 <br><br>
-                <button><span>Enviar</span></button>
+                <button type="submit"><span>Continuar</span></button>
                 <br><br>
                 
             </form>
         </center>
         </div>
-        
     </div>
     
 </body>
 </html>
+
+        
+        
+    
